@@ -4,6 +4,8 @@ services:
     container_name: odoo19-db
     env_file:
       - .env
+    ports:
+      - "${POSTGRES_PORT_MAP}"
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
@@ -11,6 +13,12 @@ services:
     volumes:
       - odoo19-db-data:/var/lib/postgresql/data
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
 
   odoo:
     build:
@@ -20,7 +28,8 @@ services:
     env_file:
       - .env
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     volumes:
       - odoo19-filestore:/var/lib/odoo
       - ./addons:/mnt/extra-addons
@@ -35,6 +44,12 @@ services:
       PORT: ${POSTGRES_PORT}
       USER: ${POSTGRES_USER}
       PASSWORD: ${POSTGRES_PASSWORD}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${ODOO_PORT} || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 
 volumes:
   odoo19-db-data:

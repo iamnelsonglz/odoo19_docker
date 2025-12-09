@@ -7,10 +7,10 @@ if [ -n "$PASSWORD_FILE" ] && [ -f "$PASSWORD_FILE" ]; then
 fi
 
 # Database connection defaults
-HOST="${HOST:-db}"
-PORT="${PORT:-5432}"
-USER="${USER:-$POSTGRES_USER}"
-PASSWORD="${PASSWORD:-$POSTGRES_PASSWORD}"
+HOST="${ODOO_HOST:-db}"
+PORT="${ODOO_PORT:-5432}"
+USER="${POSTGRES_USER:-odoo}"
+PASSWORD="${POSTGRES_PASSWORD:-odoo}"
 
 DB_ARGS=()
 

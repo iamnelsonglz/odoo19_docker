@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Docker stuff
+odoo19-db-data/
+odoo19-filestore/
+*.deb
+
+# Odoo logs
+*.log
+logs/
+
+# Config sensitive
+.env
+config/odoo.conf
+
+# Python build artifacts
+build/
+dist/
+
+# Editor configs
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db

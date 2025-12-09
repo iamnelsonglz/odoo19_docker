@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:16
+    container_name: odoo19-db
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - odoo19-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  odoo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: odoo19-app
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - odoo19-filestore:/var/lib/odoo
+      - ./addons:/mnt/extra-addons
+      - ./config:/etc/odoo
+    ports:
+      - "${ODOO_PORT_MAP}"
+      - "${ODOO_BUS_PORT_MAP}"
+      - "${ODOO_LONGPOLLING_PORT_MAP}"
+    restart: unless-stopped
+    environment:
+      HOST: ${ODOO_HOST}
+      PORT: ${POSTGRES_PORT}
+      USER: ${POSTGRES_USER}
+      PASSWORD: ${POSTGRES_PASSWORD}
+
+volumes:
+  odoo19-db-data:
+  odoo19-filestore:

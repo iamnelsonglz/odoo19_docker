@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Admin -->
+    <record model="res.groups" id="admin_cfdi_management_group" >
+        <field name="name">Administrator</field>
+    </record>
+
+    <!-- Registry -->
+    <record model="res.groups" id="registry_cfdi_management_group" >
+        <field name="name">Registry</field>
+    </record>
+
+    <!-- Guest -->
+    <record model="res.groups" id="guest_cfdi_management_group" >
+        <field name="name">Guest</field>
+    </record>
+</odoo>

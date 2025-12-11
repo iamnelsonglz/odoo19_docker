@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="odoo_tax_regime_601" model="odoo.tax.regime">
+            <field name="code">601</field>
+            <field name="name">General de Ley Personas Morales</field>
+        </record>
+        <record id="odoo_tax_regime_603" model="odoo.tax.regime">
+            <field name="code">603</field>
+            <field name="name">Personas Morales con Fines no Lucrativos</field>
+        </record>
+        <record id="odoo_tax_regime_605" model="odoo.tax.regime">
+            <field name="code">605</field>
+            <field name="name">Sueldos y Salarios e Ingresos Asimilados a Salarios</field>
+        </record>
+        <record id="odoo_tax_regime_606" model="odoo.tax.regime">
+            <field name="code">606</field>
+            <field name="name">Arrendamiento</field>
+        </record>
+        <record id="odoo_tax_regime_608" model="odoo.tax.regime">
+            <field name="code">608</field>
+            <field name="name">Demás ingresos</field>
+        </record>
+        <record id="odoo_tax_regime_609" model="odoo.tax.regime">
+            <field name="code">610</field>
+            <field name="name">Residentes en el Extranjero sin Establecimiento Permanente en México</field>
+        </record>
+        <record id="odoo_tax_regime_611" model="odoo.tax.regime">
+            <field name="code">611</field>
+            <field name="name">Ingresos por Dividendos (socios y accionistas)</field>
+        </record>
+        <record id="odoo_tax_regime_612" model="odoo.tax.regime">
+            <field name="code">612</field>
+            <field name="name">Personas Físicas con Actividades Empresariales y Profesionales</field>
+        </record>
+        <record id="odoo_tax_regime_614" model="odoo.tax.regime">
+            <field name="code">614</field>
+            <field name="name">Ingresos por intereses</field>
+        </record>
+        <record id="odoo_tax_regime_615" model="odoo.tax.regime">
+            <field name="code">615</field>
+            <field name="name">Régimen de los ingresos por obtención de premios</field>
+        </record>
+        <record id="odoo_tax_regime_616" model="odoo.tax.regime">
+            <field name="code">616</field>
+            <field name="name">Sin obligaciones fiscales</field>
+        </record>
+        <record id="odoo_tax_regime_620" model="odoo.tax.regime">
+            <field name="code">620</field>
+            <field name="name">Sociedades Cooperativas de Producción que optan por diferir sus ingresos</field>
+        </record>
+        <record id="odoo_tax_regime_621" model="odoo.tax.regime">
+            <field name="code">621</field>
+            <field name="name">Incorporación Fiscal</field>
+        </record>
+        <record id="odoo_tax_regime_622" model="odoo.tax.regime">
+            <field name="code">622</field>
+            <field name="name">Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras</field>
+        </record>
+        <record id="odoo_tax_regime_623" model="odoo.tax.regime">
+            <field name="code">623</field>
+            <field name="name">Opcional para Grupos de Sociedades</field>
+        </record>
+        <record id="odoo_tax_regime_624" model="odoo.tax.regime">
+            <field name="code">624</field>
+            <field name="name">Coordinados</field>
+        </record>
+        <record id="odoo_tax_regime_625" model="odoo.tax.regime">
+            <field name="code">625</field>
+            <field name="name">Régimen de las Actividades Empresariales con ingresos a través de Plataformas Tecnológicas</field>
+        </record>
+        <record id="odoo_tax_regime_626" model="odoo.tax.regime">
+            <field name="code">626</field>
+            <field name="name">Régimen Simplificado de Confianza</field>
+        </record>
+    </data>
+</odoo>

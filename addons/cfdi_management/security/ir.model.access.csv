@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_base_tax_regime,odoo.tax.regime,model_odoo_tax_regime,,1,1,1,1
+access_base_issued,odoo.cfdi.issued,model_odoo_cfdi_issued,,1,1,1,1
+access_base_paid,odoo.cfdi.paid,model_odoo_cfdi_paid,,1,1,1,1
+
+access_admin_cfdi_issued,odoo.cfdi.issued,model_odoo_cfdi_issued,cfdi_management.admin_cfdi_management_group,1,1,1,1
+access_registry_cfdi_issued,odoo.cfdi.issued,model_odoo_cfdi_issued,cfdi_management.registry_cfdi_management_group,1,1,1,0
+access_guest_cfdi_issued,odoo.cfdi.issued,model_odoo_cfdi_issued,cfdi_management.guest_cfdi_management_group,1,0,0,0
+
+access_admin_cfdi_paid,odoo.cfdi.paid,model_odoo_cfdi_paid,cfdi_management.admin_cfdi_management_group,1,1,1,1
+access_registry_cfdi_paid,odoo.cfdi.paid,model_odoo_cfdi_paid,cfdi_management.registry_cfdi_management_group,1,1,1,0
+access_guest_cfdi_paid,odoo.cfdi.paid,model_odoo_cfdi_paid,cfdi_management.guest_cfdi_management_group,1,0,0,0
+
+access_admin_tax_regime,odoo.tax.regime,model_odoo_tax_regime,cfdi_management.admin_cfdi_management_group,1,1,1,1
+access_registry_tax_regime,odoo.tax.regime,model_odoo_tax_regime,cfdi_management.registry_cfdi_management_group,1,0,0,0
+access_guest_tax_regime,odoo.tax.regime,model_odoo_tax_regime,cfdi_management.guest_cfdi_management_group,1,0,0,0

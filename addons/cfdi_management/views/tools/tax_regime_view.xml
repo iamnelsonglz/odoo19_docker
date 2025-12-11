@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Action -->
+        <record id="odoo_tax_regime_action" model="ir.actions.act_window">
+            <field name="name">Tax Regime</field>
+            <field name="res_model">odoo.tax.regime</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    This model is used for managing Tax Regimes.
+                </p>
+            </field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="odoo_tax_regime_submenu"
+            name="Tax Regime"
+            parent="cfdi_management_tools_menu" 
+            sequence="101"
+            action="odoo_tax_regime_action"
+        />
+
+        <!-- Search view -->
+        <record id="odoo_tax_regime_search_view" model="ir.ui.view">
+            <field name="name">odoo.tax.regime.search</field>
+            <field name="model">odoo.tax.regime</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="code"/>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- List View -->
+        <record id="odoo_tax_regime_list_view" model="ir.ui.view">
+            <field name="name">odoo.tax.regime.list</field>
+            <field name="model">odoo.tax.regime</field>
+            <field name="arch" type="xml">
+                <list duplicate="false" import="false">
+                    <field name="code"/>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="odoo_tax_regime_form_view" model="ir.ui.view">
+            <field name="name">odoo.tax.regime.form</field>
+            <field name="model">odoo.tax.regime</field>
+            <field name="arch" type="xml">
+                <form duplicate="false">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="code"/></h1>
+                        </div>
+                        <group name="main_group">
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,153 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tax_regime
+
+msgid ""
+msgstr ""
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# -- CFDI MANAGEMENT MODULE --
+#: module:cfdi_management,name:module_cfdi_management
+#: menu:cfdi_management_main_menu,name:menu_cfdi_management_main_menu
+msgid "CFDI Management"
+msgstr "Gestión de CFDI"
+
+#: module:cfdi_management,description:module_cfdi_management
+msgid "Module to manage the issuance and reception of CFDI in Odoo."
+msgstr "Módulo para gestionar la emisión y recepción de CFDI en Odoo."
+
+# --- CFDI 4.0 REGIMES ---
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_601
+msgid "General Corporate Regime"
+msgstr "Régimen General de Ley Personas Morales"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_602
+msgid "Simplified Corporate Regime"
+msgstr "Régimen Simplificado de Ley Personas Morales"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_603
+msgid "Nonprofit Legal Entities"
+msgstr "Personas Morales con Fines no Lucrativos"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_604
+msgid "Small Taxpayers Regime"
+msgstr "Régimen de Pequeños Contribuyentes"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_605
+msgid "Wages and Salaries Regime"
+msgstr "Régimen de Sueldos y Salarios e Ingresos Asimilados a Salarios"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_606
+msgid "Lease Regime"
+msgstr "Régimen de Arrendamiento"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_607
+msgid "Alienation or Acquisition of Goods"
+msgstr "Régimen de Enajenación o Adquisición de Bienes"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_608
+msgid "Other Income Regime"
+msgstr "Régimen de los Demás Ingresos"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_609
+msgid "Consolidation Regime"
+msgstr "Régimen de Consolidación"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_610
+msgid "Foreign Residents Without Permanent Establishment"
+msgstr "Régimen Residente en el Extranjero sin Establecimiento Permanente en México"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_611
+msgid "Dividend Income Regime"
+msgstr "Régimen de Ingresos por Dividendos (Socios y Accionistas)"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_612
+msgid "Business and Professional Activities"
+msgstr "Régimen de las Personas Físicas con Actividades Empresariales y Profesionales"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_613
+msgid "Intermediate Regime for Individuals"
+msgstr "Régimen Intermedio de las Personas Físicas con Actividades Empresariales"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_614
+msgid "Interest Income Regime"
+msgstr "Régimen de los Ingresos por Intereses"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_615
+msgid "Prize Income Regime"
+msgstr "Régimen de los Ingresos por Obtención de Premios"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_616
+msgid "No Fiscal Obligations"
+msgstr "Sin Obligaciones Fiscales"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_617
+msgid "PEMEX Regime"
+msgstr "PEMEX"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_618
+msgid "Simplified Regime for Individuals"
+msgstr "Régimen Simplificado de Ley Personas Físicas"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_619
+msgid "Loan Income Regime"
+msgstr "Ingresos por la Obtención de Préstamos"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_620
+msgid "Cooperative Production Companies with Deferred Income"
+msgstr "Sociedades Cooperativas de Producción que Optan por Diferir sus Ingresos"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_621
+msgid "Incorporation Regime"
+msgstr "Régimen de Incorporación Fiscal"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_622
+msgid "Agricultural, Livestock, Forestry, and Fishing Activities (Corporations)"
+msgstr "Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras Personas Morales"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_623
+msgid "Optional Regime for Corporate Groups"
+msgstr "Régimen Opcional para Grupos de Sociedades"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_624
+msgid "Coordinated Regime"
+msgstr "Régimen de Coordinados"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_625
+msgid "Business Activities Through Digital Platforms"
+msgstr "Régimen de Actividades Empresariales con Ingresos a Través de Plataformas Tecnológicas"
+
+#: model:odoo.tax.regime,name:odoo_tax_regime.regime_626
+msgid "Simplified Trust Regime"
+msgstr "Régimen Simplificado de Confianza"
+
+# --- TAX REGIME MODEL FIELDS ---
+
+#: model:ir.model,name:odoo_tax_regime.model_odoo_tax_regime
+msgid "Tax Regime"
+msgstr "Régimen Fiscal"
+
+#: model:ir.model.fields,field_description:odoo_tax_regime.field_odoo_tax_regime__code
+msgid "Code"
+msgstr "Código"
+
+#: model:ir.model.fields,field_description:odoo_tax_regime.field_odoo_tax_regime__name
+msgid "Name"
+msgstr "Nombre"
+
+#: model:ir.model.fields,field_description:odoo_tax_regime.field_odoo_tax_regime__description
+msgid "Description"
+msgstr "Descripción"
+
+#: model:ir.ui.menu,name:odoo_tax_regime.menu_tax_regime_root
+msgid "Tax Catalogs"
+msgstr "Catálogos Fiscales"
+
+#: model:ir.ui.menu,name:odoo_tax_regime.menu_tax_regime
+msgid "Tax Regimes"
+msgstr "Régimenes Fiscales"

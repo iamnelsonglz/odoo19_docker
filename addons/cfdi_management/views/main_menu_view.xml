@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Main menu -->
+        <menuitem id="cfdi_management_main_menu"
+            name="CFDI Management"
+            web_icon="cfdi_management,static/description/odoo_cfdi_management_icon.png" 
+            sequence="1"
+        />
+
+        <!-- Menu -->
+        <menuitem id="cfdi_management_menu"
+            name="CFDI Management"
+            parent="cfdi_management_main_menu" 
+            sequence="10"
+        />
+
+        <menuitem id="cfdi_management_tools_menu"
+            name="Tools"
+            parent="cfdi_management_main_menu" 
+            sequence="11"
+        />
+    </data>
+</odoo>
